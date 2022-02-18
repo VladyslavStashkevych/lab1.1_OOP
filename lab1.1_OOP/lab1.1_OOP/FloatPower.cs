@@ -30,11 +30,12 @@ namespace lab1._1_OOP {
 
             Console.Write("Enter power: ");
             double power = Double.Parse(Console.ReadLine());
-            if (!this.Init(num, power))
+            if (!this.Init(num, power)) {
                 do {
                     Console.Write("Enter another number: ");
                     num = Double.Parse(Console.ReadLine());
                 } while (!this.Init(num, power));
+            }
         }
         public void Display() {
             var pow = this.Power();
