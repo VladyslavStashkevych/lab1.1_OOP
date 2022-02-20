@@ -1,19 +1,18 @@
 ﻿using System;
 
 namespace lab1._1_OOP {
-    class FloatPower {
+    public class FloatPower {
         double first;
-        double second;
 
         public double First {
             get => first;
-            set => first = value;
+            set {
+                if (value != 0)
+                    first = value;
+            }
             
         }
-        public double Second {
-            get => second;
-            set => second = value;
-        }
+        public double Second { get; set; }
 
         public bool Init(double x, double y) {
             if (x != 0) {

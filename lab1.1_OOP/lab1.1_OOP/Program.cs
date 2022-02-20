@@ -9,8 +9,15 @@ namespace lab1._1_OOP {
             Console.WriteLine();
 
             FloatPower powerID = new FloatPower();
-            powerID.Init(-0.1, 3);
+            powerID.Init(0.1, 3);
             powerID.Display();
+            Console.WriteLine();
+
+            FloatPower powerSD = new FloatPower {
+                First = -3,
+                Second = 2
+            };
+            powerSD.Display();
             Console.WriteLine();
 
             FloatPower powerMD = MakeFloatPower(4, 2.5);
